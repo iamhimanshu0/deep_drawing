@@ -1,0 +1,108 @@
+<html>
+  <head>
+    <meta charset="UTF-8" >
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+   <title>Deep Drawing : Himanshu Tripathi</title>
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- ml5 -->
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+  </head>
+
+
+  <body style="background-color: #343a40!important;">
+
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="home.html"><b>Deep Drawing</b></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span></a>
+      </li>
+  </ul>
+    <ul id="modelSelect" class="navbar-nav ml-md-auto">
+      <h4 style="color: white;">Select From The Various Drawings...</h4> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+    </li>
+
+      
+  </div>
+</nav>
+
+
+<br>
+<center>
+  <div class="row container">
+  <div class="col-sm-6">
+    <h5>
+      <span class="alert alert-success" id="modelStatus">Loading Cat model. Please Wait...</span>
+    </h5>
+  </div>
+  <div class="col-sm-6">
+     <span class="alert alert-danger" id="newModel">This will Change when you select new Model.....</span>
+    
+</div>
+  </div>
+</div>  
+</center>
+
+<br>
+<center>
+  <div class="container" id="sketch-holder">
+
+  </div>
+  <br>
+      <button onclick="runAgain()" class="btn btn-danger my-2 my-sm-0" type="submit">Run Again</button>
+    
+</center>
+
+<footer>
+  <div class="container">
+    <hr>
+        <div class="text-center center-block">
+                 <a style="color: white;" href="https://www.linkedin.com/in/iamhimanshu0/"><i id="social-gp" class="fa fa-github-square fa-3x social"></i></a>
+                 <a href="https://www.linkedin.com/in/iamhimanshu0/"><i id="social-gp" class="fa fa-linkedin-square fa-3x social"></i></a>
+                  <a style="color: red;" href="https://www.instagram.com/iamhimanshu0/"><i id="social-tw" class="fa fa-instagram fa-3x social"></i></a>
+                  <a style="color: #3b5998" href="https://www.facebook.com/iamhimanshu0"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+                  <a style="color: skyblue;" href="https://twitter.com/iam_himanshu0"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+                  
+             
+              <a href="mailto:iamhimanshutripathi0@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+              <hr>
+              <p style="color: white;">© 2020, Himanshu Tripathi All right reserved.</p>
+  </div>
+
+
+</footer>
+
+
+
+    
+<script src="sketch.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+
+
+
+
+    <!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+  </body>
+</html>
